@@ -1,8 +1,8 @@
 {
   "name": "front-desk-app",
   "version": "1.0.0",
-  "description": "It is a Front Desk App backend.",
-  "main": "index.js",
+  "description": "It is a front desk application for managing customer services.",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Vijay-Nataraj/Front-Desk-APP/issues"
   },
-  "homepage": "https://github.com/Vijay-Nataraj/Front-Desk-APP#readme"
+  "homepage": "https://github.com/Vijay-Nataraj/Front-Desk-APP#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
