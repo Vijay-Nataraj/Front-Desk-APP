@@ -23,6 +23,6 @@ This is the backend for the Front Desk Application. It is a RESTful API that all
 - [x] Dotenv - config.js setup
 - [x] Split server.js into server.js and app.js
 - [x] Setup Router
-- [ ] Setup Controller
+- [x] Setup Controller
 - [ ] Setup Model
 - [ ] Setup Middleware
