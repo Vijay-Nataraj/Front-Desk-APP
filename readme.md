@@ -20,3 +20,4 @@ This is the backend for the Front Desk Application. It is a RESTful API that all
 - [x] Express server setup
 - [x] MongoDB setup
 - [x] Dotenv setup
+- [x] Dotenv - config.js setup
