@@ -25,5 +25,5 @@ This is the backend for the Front Desk Application. It is a RESTful API that all
 - [x] Setup Router
 - [x] Setup Controller
 - [x] Setup Model
-- [ ] Auth Endpoints - register, login, logout, me
+- [x] Auth Endpoints - register, login, logout, me
 - [ ] Setup Middleware

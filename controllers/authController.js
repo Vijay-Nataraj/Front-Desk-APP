@@ -6,6 +6,8 @@ const { SECRET_KEY } = require("../utils/config");
 const authController = {
   register: async (request, response) => {
     try {
+      console.log(request.body);
+
       // get the details from the request body
       const { name, email, password } = request.body;
 
@@ -63,6 +65,34 @@ const authController = {
 
       //Send a response
       response.status(201).json({ message: "Login successful" });
+    } catch (error) {
+      response.status(500).json({ massage: error.message });
+    }
+  },
+
+  logout: async (request, response) => {
+    try {
+      //clear cookie
+      response.clearCookie("token");
+
+      // send a response
+      response.status(200).json({ message: "Logout successful" });
+    } catch (error) {
+      response.status(500).json({ massage: error.message });
+    }
+  },
+
+  me: async (request, response) => {
+    try {
+      console.log(request.userId);
+
+      const userId = request.userId;
+
+      // find the user with the id
+      const user = await User.findById(userId).select("-password -__v");
+
+      // send a response
+      response.status(200).json({ user });
     } catch (error) {
       response.status(500).json({ massage: error.message });
     }
